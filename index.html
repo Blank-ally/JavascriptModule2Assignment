@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stith Mod 2: Assignment 2</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <main>
+         
+        <div class="container">
+  
+              <div class="half-width">
+                  <h2>Student Form</h2>
+  
+                  <form action="javascript:addStudent()" id="studentForm">
+  
+                      <label for="firstName">First Name</label>
+                      <input type="text" id="firstName" >
+  
+                      <label for="lastName">Last Name</label>
+                      <input type="text" id="lastName" required>
+  
+                      <label for="program">Declared Program</label>
+                      <select id="program" required>
+                          <option disabled selected value> Select a Program </option>
+                          <option value="IT - Computer Support Specialist">IT - Computer Support Specialist</option>
+                          <option value="IT - Cybersecurity Specialist">IT - Cybersecurity Specialist</option>
+                          <option value="IT - Data and Analytics Specialist">IT - Data and Analytics Specialist</option>
+                          <option value="IT - Network Specialist">IT - Network Specialist</option>
+                          <option value="IT - Web and Software Developer">IT - Web and Software Developer</option>
+                          <option value="Front End Web Development">Front End Web Development</option>
+                      </select>
+  
+                      <label for="enrollmentDate">Enrollment Date</label>
+                      <input type="date" id="enrollmentDate" required>
+  
+                      <input type="submit" value="Add Student">
+  
+                  </form>
+  
+              </div>
+  
+              <div class="half-width">
+  
+                  <h2>Enrolled Students:</h2>
+  
+                  <div id="students" class="students">
+  
+                
+                  </div>
+              </div>
+          </div>
+      </main>
+      <script src="/js/main.js"></script>
+</body>
+</html>

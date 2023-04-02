@@ -1,0 +1,152 @@
+*Zeroing out margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #f5f5f5;
+}
+
+/*Selecting inputs, selects, and labels in any form*/
+form input, form select {
+    display: block;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+   
+}
+form label {
+    font-weight:bold;
+    color:#f5f5f5;
+}
+form input{
+    border:none;
+    outline: none;
+    border-bottom: 2px solid #cadde8;
+    text-align: left;
+    color: #111416;
+  
+}
+
+form {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+form input[type='submit'] {
+  
+    display: block;
+   
+  
+    background-color:#b0ccdd;
+
+    padding: 10px;
+    margin: 20px 0;
+
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+form input[type='submit']:hover{
+    background-color:#96b2c3;
+    color:#f5f5f5;
+
+}
+
+h2 {
+    text-align: center;
+    color: #f5f5f5;
+}
+
+/*A div called container to hold the main content*/
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    
+}
+
+/*Two divs for the .container that will each take up
+half of the container*/
+.container .half-width {
+    margin: 50px;
+    flex: 1;
+    padding: 50px;
+    background-color: rgba(50, 59, 65, .9);
+}
+.student-name{
+    font-weight: bold;
+   margin:20px;
+}
+.students .student-name:hover{
+   color:#f5f5f5;
+ 
+}
+
+.students {
+   
+    overflow-y: scroll;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 50px;
+    margin: 0 auto;
+    transition: max-height 0.25s ease-in;
+}
+.student:hover{
+    color: #f5f5f5;
+}
+
+.student {
+   border-radius:5px;
+    margin:10px auto;
+    width: 280px;
+    height: 100px;
+    cursor: pointer;
+    background: #b0ccdd;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+    text-align: center;
+    font-size: medium;
+  
+   
+}
+
+body{
+    background-image:url('/css/media/young-beautiful-african-woman-student-resting-relaxing-sitting-cafe-smiling-drinking-coffee.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*stacking the .half-width divs below 900px*/
+@media only screen and (max-width: 900px) {
+
+    .container {
+        display: block;
+    }  
+
+    .container .half-width:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
